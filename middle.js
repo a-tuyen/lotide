@@ -10,7 +10,7 @@ const eqArrays = function(array1, array2) {
 };
 
 const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
+  if (eqArrays(array1, array2) === true) {
     console.log(`✅ Assertion Passed: ${array1} === ${array2}`);
   } else {
     console.log(`❌ Assertion Failed: ${array1} !== ${array2}`);
@@ -37,3 +37,4 @@ console.log("Odd Array: ", middle([1, 2, 7, 4, 5]));
 console.log("Even Array:",  middle([1, 2, 6, 4, 5, 6]));
 console.log("Under 2 array:", middle([1, 2]));
 
+assertArraysEqual(middle([1, 2, 6, 4, 5, 6]), [6, 4]);
