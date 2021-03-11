@@ -20,6 +20,7 @@ const assertArraysEqual = function(array1, array2) {
 
 
 const words = ["ground", "control", "to", "major", "tom"];
+
 const map = function(array, callBack) {
   const results = [];
   for (let item of array) {

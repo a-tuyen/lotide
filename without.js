@@ -20,16 +20,16 @@ const assertArraysEqual = function(array1, array2) {
 
 
 const without = function(sourceArr, removeItemsArr) {
- let goodArr = []
+  let goodArr = [];
   for (let i = 0; i < sourceArr.length; i++) {
-      if (sourceArr[i] !== removeItemsArr[i])
-        goodArr.push(sourceArr[i]);
-      } 
-    return goodArr;
-  } 
+    if (sourceArr[i] !== removeItemsArr[i])
+      goodArr.push(sourceArr[i]);
+  }
+  return goodArr;
+};
   
 
-const source = [1, 2, 3]
+const source = [1, 2, 3];
 assertArraysEqual(without(source, [1]), source);
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 
